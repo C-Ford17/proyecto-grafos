@@ -15,7 +15,7 @@ public class GrafoD<E, C> implements Grafo<E, C> {
     }
 
     @Override
-    public E getCosto(int aPos, int bPos) {
+    public C getCosto(int aPos, int bPos) {
         var a = vertices.get(aPos);
         E b = vertices.get(bPos).dato;
         for (var arista : a) {

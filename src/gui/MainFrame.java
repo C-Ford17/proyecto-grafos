@@ -5,10 +5,10 @@
 package gui;
 
 import datos.Ciudad;
-import java.awt.Canvas;
+import datos.Viaje;
+
 import java.awt.Color;
 import java.awt.Rectangle;
-import java.awt.event.MouseEvent;
 
 import javax.swing.JOptionPane;
 import grafo.Grafo;
@@ -26,7 +26,7 @@ public class MainFrame extends javax.swing.JFrame {
     public MainFrame() {
         initComponents();
     }
-    private Grafo<Ciudad, Ciudad> grafo = new GrafoD<>();
+    private Grafo<Ciudad, Viaje> grafo = new GrafoD<>();
     private int n = 0;
      int nodo1X = -1;
      int nodo1Y = -1;
